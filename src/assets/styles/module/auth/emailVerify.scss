@@ -1,0 +1,77 @@
+.email_verification-modal {
+	.modal-content {
+		width: 320px;
+	}
+	.modal-body {
+		padding: 21px 20px;
+	}
+	.email_verification-container {
+		.email_verification-animation {
+			.lottie-animation {
+				margin: 10px auto;
+			}
+			.email-fail-lottie-animation {
+				padding-bottom: 10px;
+			}
+		}
+		.email-text {
+			text-align: center;
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 25px;
+			color: getColor($grey, 700);
+		}
+		.email-fail-text {
+			margin: 10px 0;
+		}
+		.continue-link {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			justify-content: end;
+			.resend-email-modal {
+				display: flex;
+				align-items: center;
+				gap: 16px;
+				justify-content: end;
+				flex-direction: column;
+				.form-group {
+					margin-bottom: 10px;
+					.resend-email-input {
+						background: #e7eef5;
+						border: 1px solid #d1dbe9;
+						border-radius: 10px;
+						width: 281px;
+						height: 40px;
+						margin-top: 20px;
+					}
+				}
+				.resend-email-link {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					margin-bottom: 15px;
+					cursor: pointer;
+				}
+			}
+			.continue {
+				color: getColor($blue, 400);
+				font-family: 'Open Sans';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 25px;
+				cursor: pointer;
+			}
+			.email-arrow {
+				display: flex;
+				align-items: center;
+				gap: 15px;
+				margin-top: 27px;
+				cursor: pointer;
+			}
+		}
+	}
+}

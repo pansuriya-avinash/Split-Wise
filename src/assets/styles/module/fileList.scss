@@ -1,0 +1,69 @@
+.files-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 100px;
+	width: 100%;
+	margin: 100px auto 0;
+	justify-content: center;
+	box-sizing: border-box;
+	max-width: 1450px;
+	padding: 110px 20px 20px 20px;
+	.files-text {
+		margin: 0 0 46px 66px;
+		h2 {
+			color: getColor($grey, 700);
+			font-size: 34px;
+			font-family: 'Open Sans';
+			font-weight: 500;
+			padding-bottom: 12px;
+		}
+		span {
+			color: getColor($grey, 700);
+			font-size: 22px;
+			font-family: 'Open Sans';
+		}
+	}
+	.file-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 50px;
+		padding: 45px 0;
+		margin-left: 66px;
+	}
+	.file-icon {
+		height: calc(100vh - 500px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 20px;
+		h2 {
+			font-size: 34px;
+			font-weight: 600;
+		}
+	}
+}
+.files-images {
+	span {
+		color: getColor($grey, 700);
+		font-size: 24px;
+		font-family: 'Open Sans';
+		&:hover {
+			font-weight: 700;
+		}
+	}
+	.file {
+		border-radius: 40px;
+		background: getColor($white, 100);
+		box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
+		width: 374px;
+		height: 302px;
+		margin-top: 20px;
+		overflow: hidden;
+		cursor: pointer;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

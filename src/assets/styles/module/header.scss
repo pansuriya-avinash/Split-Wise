@@ -1,0 +1,113 @@
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	padding: 0px 30px;
+	height: 100px;
+	background: getColor($grey, 100);
+	border-bottom: 1px solid rgba(32, 34, 36, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	.header-details {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 80px;
+		.header-logo {
+			cursor: pointer;
+		}
+		.header-links {
+			display: flex;
+			align-items: center;
+			gap: 22px;
+			.link {
+				font-family: 'Open Sans';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 27px;
+				color: getColor($grey, 800);
+				&:not(.active) {
+					opacity: 0.5;
+				}
+				&.active {
+					font-family: 'Open Sans';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 27px;
+					color: getColor($grey, 800);
+				}
+			}
+		}
+	}
+	.header-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		.header-sign-up-btn {
+			width: 109px;
+			height: 50px;
+			background: getColor($grey, 700);
+			border: 1px solid rgba(32, 34, 36, 0.5);
+			border-radius: 20px;
+			color: getColor($white, 50);
+		}
+		.header-login-btn {
+			width: 109px;
+			height: 50px;
+			background: getColor($grey, 100);
+			border: 2px solid rgba(58, 69, 83, 0.5);
+			border-radius: 20px;
+		}
+	}
+}
+
+.action-wrapper {
+	min-height: 37px;
+}
+.dropdown {
+	position: relative;
+	cursor: pointer;
+	.hide {
+		display: none;
+	}
+	.show {
+		display: block;
+	}
+	.dropdown-modal {
+		background: #ffffff;
+		box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.15);
+		border-radius: 10px;
+		width: 187px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 20px;
+		gap: 20px;
+		right: -24px;
+		top: 36px;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 100%;
+			right: 19px;
+			border: 11px solid transparent;
+			border-bottom-color: #dddddd;
+		}
+		&::after {
+			right: 20px;
+			border: 10px solid transparent;
+			border-bottom-color: #ffffff;
+		}
+	}
+	.password-change {
+		cursor: pointer;
+	}
+}
